@@ -1,0 +1,12 @@
+<h1>New Post</h1>
+
+<%= error_messages_for :post %>
+
+<% form_for(:post, :url => collection_url) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+  <p>
+    <%= submit_tag "Create" %>
+  </p>
+<% end %>
+<br/>
+<%= link_to 'Back', collection_url %>
