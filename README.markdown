@@ -46,3 +46,12 @@ Retrieve a single Post:
 
     $ switchboard --jid client@xmpp.local --password pa55word \
         pubsub --server pubsub.local --node "/posts/1" items
+
+Delete (retract) a single Post:
+
+    $ switchboard --jid client@xmpp.local --password pa55word \
+        pubsub --server pubsub.local --node "/posts" \
+        retract --item-id 1
+
+_**Note**: This could also be mapped as a `purge` without item ids, but is not
+currently._
