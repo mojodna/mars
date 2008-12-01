@@ -43,6 +43,12 @@ Publish a new item:
         switchboard --jid client@xmpp.local --password pa55word \
         pubsub --server pubsub.local --node "/posts" publish
 
+Update an existing item:
+
+    $ echo "<post><body>New body</body><title>Post Title</title</post>" | \
+        switchboard --jid client@xmpp.local --password pa55word \
+        pubsub --server pubsub.local --node "/posts" publish --item-id 1
+
 Retrieve all Posts:
 
     $ switchboard --jid client@xmpp.local --password pa55word \
