@@ -16,6 +16,12 @@ I run a pair of ejabberd-2.0.2 servers: `xmpp.local` runs in Mac OS X,
 `pubsub.local` runs inside an Ubuntu VM via VMware Fusion configured with
 `avahi-daemon` for ZeroConf goodness.
 
+In addition, some functionality may depend on unreleased versions of
+`switchboard` and `xmpp4r`. To develop against trunk versions, clone both
+projects above `mars` and set:
+
+    RUBYLIB=../xmpp4r/lib/:../switchboard/lib/
+
 Install dependencies:
 
     $ sudo gem install mojodna-switchboard -s http://gems.github.com
