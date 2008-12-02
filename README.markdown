@@ -26,6 +26,10 @@ Install dependencies:
 
     $ sudo gem install mojodna-switchboard -s http://gems.github.com
 
+Initialize submodules:
+
+    $ git submodule update --init
+
 Initialize the database:
 
     $ rake db:migrate
