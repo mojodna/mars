@@ -6,4 +6,4 @@
 	url = git://github.com/giraffesoft/resource_controller.git
 [submodule "vendor/plugins/dovetail"]
 	path = vendor/plugins/dovetail
-	url = git@github.com:mojodna/dovetail.git
+	url = git://github.com/mojodna/dovetail.git
